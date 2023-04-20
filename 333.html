@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Удаление данных - Лендинг страница</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f2f2f2;
+				color: #333333;
+				margin: 0;
+				padding: 0;
+			}
+			header {
+				background-color: #333333;
+				color: #ffffff;
+				padding: 20px;
+			}
+			h1 {
+				margin: 0;
+			}
+			.container {
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 20px;
+				box-sizing: border-box;
+			}
+			form {
+				background-color: #ffffff;
+				padding: 20px;
+				border-radius: 5px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+			label {
+				display: block;
+				margin-bottom: 10px;
+				font-weight: bold;
+			}
+			input[type="text"], input[type="email"] {
+				display: block;
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #cccccc;
+				border-radius: 3px;
+				box-sizing: border-box;
+				margin-bottom: 20px;
+				font-size: 16px;
+			}
+			button[type="submit"] {
+				background-color: #333333;
+				color: #ffffff;
+				border: none;
+				padding: 10px 20px;
+				border-radius: 3px;
+				font-size: 16px;
+				cursor: pointer;
+			}
+			button[type="submit"]:hover {
+				background-color: #444444;
+			}
+			@media only screen and (max-width: 767px) {
+				header {
+					text-align: center;
+				}
+				h1 {
+					font-size: 28px;
+					margin-bottom: 10px;
+				}
+				.container {
+					padding: 10px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1>Удаление данных</h1>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<form action="#" method="POST">
+					<label for="name">Введите имя:</label>
+					<input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+					<label for="email">Введите e-mail:</label>
+					<input type="email" id="email" name="email" placeholder="Введите ваш e-mail" required>
+					<button type="submit">Удалить данные</button>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>
